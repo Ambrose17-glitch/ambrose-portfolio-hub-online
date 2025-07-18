@@ -81,7 +81,7 @@ const Hero = () => {
                 <img
                   src={profileImage}
                   alt="Ambrose Ssekyanzi - Medical Student & Software Developer"
-                  className="w-80 h-80 lg:w-96 lg:h-96 object-cover object-center group-hover:scale-110 transition-transform duration-700 ease-out"
+                  className="w-80 h-80 lg:w-96 lg:h-96 object-cover object-top group-hover:scale-110 transition-transform duration-700 ease-out"
                 />
                 
                 {/* Overlay for extra polish */}
