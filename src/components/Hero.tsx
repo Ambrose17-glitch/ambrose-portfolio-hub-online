@@ -1,6 +1,6 @@
 import { Button } from "@/components/ui/button";
 import { MessageCircle, Download } from "lucide-react";
-import profileImage from "@/assets/profile-image.jpg";
+import profileImage from "/lovable-uploads/fa162a60-ca9a-4db8-8a43-e78f2beb9ebb.png";
 
 const Hero = () => {
   const handleWhatsAppClick = () => {
@@ -62,13 +62,36 @@ const Hero = () => {
           
           {/* Profile Image */}
           <div className="animate-scale-in flex justify-center lg:justify-end">
-            <div className="relative">
-              <div className="absolute -inset-1 primary-gradient rounded-full blur opacity-75"></div>
-              <img
-                src={profileImage}
-                alt="Ambrose Ssekyanzi"
-                className="relative w-80 h-80 lg:w-96 lg:h-96 object-cover rounded-full shadow-[var(--shadow-strong)] border-4 border-card"
-              />
+            <div className="relative group">
+              {/* Animated Background Elements */}
+              <div className="absolute -inset-8 animate-pulse">
+                <div className="absolute top-0 left-0 w-4 h-4 bg-primary/30 rounded-full animate-bounce" style={{ animationDelay: '0s' }}></div>
+                <div className="absolute top-8 right-4 w-3 h-3 bg-accent/40 rounded-full animate-bounce" style={{ animationDelay: '0.5s' }}></div>
+                <div className="absolute bottom-4 left-8 w-2 h-2 bg-primary/50 rounded-full animate-bounce" style={{ animationDelay: '1s' }}></div>
+                <div className="absolute bottom-0 right-0 w-5 h-5 bg-accent/30 rounded-full animate-bounce" style={{ animationDelay: '1.5s' }}></div>
+              </div>
+              
+              {/* Multiple Gradient Rings */}
+              <div className="absolute -inset-4 primary-gradient rounded-full blur-sm opacity-40 animate-pulse"></div>
+              <div className="absolute -inset-2 bg-gradient-to-r from-primary/50 to-accent/50 rounded-full blur opacity-60 group-hover:opacity-80 transition-opacity duration-300"></div>
+              <div className="absolute -inset-1 primary-gradient rounded-full blur opacity-75 group-hover:blur-md transition-all duration-300"></div>
+              
+              {/* Main Image Container */}
+              <div className="relative overflow-hidden rounded-full border-4 border-card shadow-[var(--shadow-strong)] group-hover:shadow-[var(--shadow-glow)] transition-all duration-500 group-hover:scale-105">
+                <img
+                  src={profileImage}
+                  alt="Ambrose Ssekyanzi - Medical Student & Software Developer"
+                  className="w-80 h-80 lg:w-96 lg:h-96 object-cover object-center group-hover:scale-110 transition-transform duration-700 ease-out"
+                />
+                
+                {/* Overlay for extra polish */}
+                <div className="absolute inset-0 bg-gradient-to-t from-primary/10 via-transparent to-transparent opacity-0 group-hover:opacity-100 transition-opacity duration-300"></div>
+              </div>
+              
+              {/* Floating Badge */}
+              <div className="absolute -bottom-4 -right-4 bg-primary text-primary-foreground px-4 py-2 rounded-full text-sm font-semibold shadow-lg animate-bounce">
+                Available for Hire! 🚀
+              </div>
             </div>
           </div>
         </div>
