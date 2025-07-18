@@ -56,11 +56,11 @@ const Contact = () => {
     <section id="contact" className="section-padding bg-muted/30">
       <div className="container-max">
         <div className="text-center mb-16 animate-fade-in">
-          <h2 className="text-3xl md:text-4xl lg:text-5xl font-bold text-foreground mb-4">
+          <h2 className="text-2xl sm:text-3xl md:text-4xl lg:text-5xl font-bold text-foreground mb-4">
             Get In <span className="text-gradient">Touch</span>
           </h2>
           <div className="w-24 h-1 primary-gradient mx-auto mb-6 rounded-full"></div>
-          <p className="text-lg text-muted-foreground max-w-2xl mx-auto">
+          <p className="text-base sm:text-lg text-muted-foreground max-w-2xl mx-auto">
             Ready to collaborate on your next project? Let's discuss how we can bring your ideas to life.
           </p>
         </div>
@@ -69,11 +69,11 @@ const Contact = () => {
           {/* Contact Information */}
           <div className="animate-slide-up space-y-8">
             <div className="space-y-6">
-              <h3 className="text-2xl font-semibold text-foreground">Let's Connect</h3>
+              <h3 className="text-xl sm:text-2xl font-semibold text-foreground">Let's Connect</h3>
               <p className="text-muted-foreground leading-relaxed">
                 I'm always open to discussing new opportunities, interesting projects, 
                 or potential collaborations. Whether you need a web application, 
-                consultation on medical technology, or want to explore trading automation, 
+                consultation on medical technology, or want to explore business automation, 
                 I'd love to hear from you.
               </p>
             </div>

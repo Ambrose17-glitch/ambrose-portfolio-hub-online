@@ -26,8 +26,8 @@ const Projects = () => {
     },
     {
       id: 3,
-      title: "Deriv Trading Robots",
-      description: "Automated trading bots for Deriv platform using advanced algorithms and market analysis. Features risk management, real-time monitoring, and customizable trading strategies for optimal performance.",
+      title: "Business Automation Systems",
+      description: "Advanced automation systems for business operations using intelligent algorithms and data analysis. Features process optimization, real-time monitoring, and customizable workflow management for enhanced productivity.",
       image: tradingRobotsImage,
       techStack: ["Python", "TensorFlow", "Pandas", "API Integration", "Machine Learning"],
       liveUrl: "#",
@@ -49,7 +49,7 @@ const Projects = () => {
           </p>
         </div>
         
-        <div className="grid lg:grid-cols-3 md:grid-cols-2 gap-8">
+        <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6 sm:gap-8">
           {projects.map((project, index) => (
             <div 
               key={project.id}
@@ -61,14 +61,14 @@ const Projects = () => {
                 <img
                   src={project.image}
                   alt={project.title}
-                  className="w-full h-48 object-cover transition-transform duration-500 group-hover:scale-110"
+                  className="w-full h-40 sm:h-48 object-cover transition-transform duration-500 group-hover:scale-110"
                 />
                 <div className="absolute inset-0 bg-primary/20 opacity-0 group-hover:opacity-100 transition-opacity duration-300"></div>
               </div>
               
               {/* Project Content */}
-              <div className="p-6 space-y-4">
-                <h3 className="text-xl font-semibold text-foreground group-hover:text-primary transition-colors">
+              <div className="p-4 sm:p-6 space-y-4">
+                <h3 className="text-lg sm:text-xl font-semibold text-foreground group-hover:text-primary transition-colors">
                   {project.title}
                 </h3>
                 

@@ -6,7 +6,7 @@ const About = () => {
     "JavaScript", 
     "Web App Development",
     "School Systems",
-    "Trading Bots",
+    "Automation Systems",
     "UI Design"
   ];
 
@@ -24,7 +24,7 @@ const About = () => {
     {
       icon: TrendingUp,
       title: "Entrepreneur",
-      description: "Founder of Quant Hub trading solutions"
+      description: "Founder of Quant Hub - Business Solutions"
     },
     {
       icon: Palette,
@@ -37,7 +37,7 @@ const About = () => {
     <section id="about" className="section-padding bg-muted/30">
       <div className="container-max">
         <div className="text-center mb-16 animate-fade-in">
-          <h2 className="text-3xl md:text-4xl lg:text-5xl font-bold text-foreground mb-4">
+          <h2 className="text-2xl sm:text-3xl md:text-4xl lg:text-5xl font-bold text-foreground mb-4">
             About <span className="text-gradient">Me</span>
           </h2>
           <div className="w-24 h-1 primary-gradient mx-auto mb-6 rounded-full"></div>
@@ -45,22 +45,22 @@ const About = () => {
         
         <div className="grid lg:grid-cols-2 gap-12 items-center">
           {/* Bio Content */}
-          <div className="animate-slide-up space-y-6">
-            <p className="text-lg text-muted-foreground leading-relaxed">
+          <div className="animate-slide-up space-y-4 sm:space-y-6">
+            <p className="text-base sm:text-lg text-muted-foreground leading-relaxed">
               I'm a 3rd-year student of Bachelor of Medicine and Surgery at Kampala International University 
               with a passion for building intelligent systems. I combine my medical knowledge with cutting-edge 
               technology to create innovative solutions that can transform healthcare and business operations.
             </p>
             
-            <p className="text-lg text-muted-foreground leading-relaxed">
-              As the founder of Quant Hub, I develop automated trading systems and web applications 
+            <p className="text-base sm:text-lg text-muted-foreground leading-relaxed">
+              As the founder of Quant Hub, I develop automated systems and web applications 
               that help businesses streamline their operations. My goal is to bridge the gap between 
               healthcare and technology through innovative software solutions.
             </p>
             
             {/* Skills */}
             <div className="space-y-4">
-              <h3 className="text-xl font-semibold text-foreground">Technical Skills</h3>
+              <h3 className="text-lg sm:text-xl font-semibold text-foreground">Technical Skills</h3>
               <div className="flex flex-wrap gap-3">
                 {skills.map((skill, index) => (
                   <span 

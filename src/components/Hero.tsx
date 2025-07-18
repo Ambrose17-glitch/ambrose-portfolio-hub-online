@@ -18,20 +18,20 @@ const Hero = () => {
         <div className="grid lg:grid-cols-2 gap-12 items-center">
           {/* Text Content */}
           <div className="animate-fade-in space-y-6">
-            <div className="space-y-2">
-              <h1 className="text-4xl md:text-5xl lg:text-6xl font-bold text-foreground">
+            <div className="space-y-3 sm:space-y-4">
+              <h1 className="text-3xl sm:text-4xl md:text-5xl lg:text-6xl font-bold text-foreground leading-tight">
                 Hi, I'm{" "}
                 <span className="text-gradient">Ambrose Ssekyanzi</span>
               </h1>
-              <p className="text-xl md:text-2xl text-muted-foreground font-medium">
+              <p className="text-lg sm:text-xl md:text-2xl text-muted-foreground font-medium">
                 3rd-Year Medical Student at Kampala International University
               </p>
-              <p className="text-lg md:text-xl text-primary font-semibold">
+              <p className="text-base sm:text-lg md:text-xl text-primary font-semibold">
                 Software Developer | Founder of Quant Hub
               </p>
             </div>
             
-            <p className="text-lg text-muted-foreground max-w-2xl leading-relaxed">
+            <p className="text-base sm:text-lg text-muted-foreground max-w-2xl leading-relaxed">
               Passionate about building intelligent systems that bridge healthcare and technology. 
               Creating innovative solutions while pursuing my medical degree.
             </p>
@@ -81,7 +81,7 @@ const Hero = () => {
                 <img
                   src={profileImage}
                   alt="Ambrose Ssekyanzi - Medical Student & Software Developer"
-                  className="w-80 h-80 lg:w-96 lg:h-96 object-cover object-top group-hover:scale-110 transition-transform duration-700 ease-out"
+                  className="w-64 h-64 sm:w-80 sm:h-80 lg:w-96 lg:h-96 object-cover object-top group-hover:scale-110 transition-transform duration-700 ease-out"
                 />
                 
                 {/* Overlay for extra polish */}
@@ -89,7 +89,7 @@ const Hero = () => {
               </div>
               
               {/* Floating Badge */}
-              <div className="absolute -bottom-4 -right-4 bg-primary text-primary-foreground px-4 py-2 rounded-full text-sm font-semibold shadow-lg animate-bounce">
+              <div className="absolute -bottom-3 -right-3 sm:-bottom-4 sm:-right-4 bg-primary text-primary-foreground px-3 py-1.5 sm:px-4 sm:py-2 rounded-full text-xs sm:text-sm font-semibold shadow-lg animate-bounce">
                 Available for Hire! 🚀
               </div>
             </div>
