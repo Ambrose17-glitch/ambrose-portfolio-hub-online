@@ -42,7 +42,7 @@ const Hero = () => {
                 variant="primary" 
                 size="xl"
                 onClick={handleHireMe}
-                className="animate-slide-up"
+                className="animate-slide-up btn-primary glow-effect"
               >
                 <Download className="w-5 h-5" />
                 Hire Me
@@ -52,7 +52,7 @@ const Hero = () => {
                 variant="whatsapp" 
                 size="xl"
                 onClick={handleWhatsAppClick}
-                className="animate-slide-up"
+                className="animate-slide-up btn-whatsapp glow-effect"
               >
                 <MessageCircle className="w-5 h-5" />
                 WhatsApp Me
@@ -63,12 +63,14 @@ const Hero = () => {
           {/* Profile Image */}
           <div className="animate-scale-in flex justify-center lg:justify-end">
             <div className="relative group">
-              {/* Animated Background Elements */}
-              <div className="absolute -inset-8 animate-pulse">
-                <div className="absolute top-0 left-0 w-4 h-4 bg-primary/30 rounded-full animate-bounce" style={{ animationDelay: '0s' }}></div>
-                <div className="absolute top-8 right-4 w-3 h-3 bg-accent/40 rounded-full animate-bounce" style={{ animationDelay: '0.5s' }}></div>
-                <div className="absolute bottom-4 left-8 w-2 h-2 bg-primary/50 rounded-full animate-bounce" style={{ animationDelay: '1s' }}></div>
-                <div className="absolute bottom-0 right-0 w-5 h-5 bg-accent/30 rounded-full animate-bounce" style={{ animationDelay: '1.5s' }}></div>
+              {/* Dynamic Animated Background Elements */}
+              <div className="absolute -inset-12 animate-pulse">
+                <div className="absolute top-0 left-0 w-4 h-4 bg-primary/40 rounded-full floating-element" style={{ animationDelay: '0s' }}></div>
+                <div className="absolute top-8 right-4 w-3 h-3 dynamic-gradient rounded-full floating-element" style={{ animationDelay: '0.5s' }}></div>
+                <div className="absolute bottom-4 left-8 w-5 h-5 accent-gradient rounded-full floating-element" style={{ animationDelay: '1s' }}></div>
+                <div className="absolute bottom-0 right-0 w-4 h-4 bg-accent-vibrant/60 rounded-full floating-element" style={{ animationDelay: '1.5s' }}></div>
+                <div className="absolute top-1/2 left-1/4 w-2 h-2 bg-warning/70 rounded-full floating-element" style={{ animationDelay: '2s' }}></div>
+                <div className="absolute top-1/4 right-1/3 w-3 h-3 bg-success/60 rounded-full floating-element" style={{ animationDelay: '2.5s' }}></div>
               </div>
               
               {/* Multiple Gradient Rings */}
@@ -88,8 +90,8 @@ const Hero = () => {
                 <div className="absolute inset-0 bg-gradient-to-t from-primary/10 via-transparent to-transparent opacity-0 group-hover:opacity-100 transition-opacity duration-300"></div>
               </div>
               
-              {/* Floating Badge */}
-              <div className="absolute -bottom-3 -right-3 sm:-bottom-4 sm:-right-4 bg-primary text-primary-foreground px-3 py-1.5 sm:px-4 sm:py-2 rounded-full text-xs sm:text-sm font-semibold shadow-lg animate-bounce">
+              {/* Dynamic Floating Badge */}
+              <div className="absolute -bottom-3 -right-3 sm:-bottom-4 sm:-right-4 dynamic-gradient text-white px-3 py-1.5 sm:px-4 sm:py-2 rounded-full text-xs sm:text-sm font-semibold shadow-[var(--shadow-dynamic)] floating-element glow-effect">
                 Available for Hire! 🚀
               </div>
             </div>

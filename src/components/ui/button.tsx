@@ -21,7 +21,7 @@ const buttonVariants = cva(
         // Professional portfolio variants
         primary: "btn-primary rounded-lg font-semibold",
         professional: "btn-secondary rounded-lg font-medium",
-        whatsapp: "bg-green-500 text-white hover:bg-green-600 shadow-[var(--shadow-soft)] transition-[var(--transition-smooth)] hover:shadow-[var(--shadow-medium)] hover:-translate-y-0.5",
+        whatsapp: "btn-whatsapp rounded-lg font-semibold",
       },
       size: {
         default: "h-10 px-4 py-2",
