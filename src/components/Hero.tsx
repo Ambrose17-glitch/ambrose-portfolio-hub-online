@@ -19,7 +19,7 @@ const Hero = () => {
           {/* Text Content */}
           <div className="animate-fade-in space-y-6">
             <div className="space-y-3 sm:space-y-4">
-              <h1 className="text-3xl sm:text-4xl md:text-5xl lg:text-6xl font-bold text-foreground leading-tight">
+              <h1 className="text-3xl sm:text-4xl md:text-5xl lg:text-6xl font-bold text-foreground leading-tight font-playfair">
                 Hi, I'm{" "}
                 <span className="text-gradient">Ambrose Ssekyanzi</span>
               </h1>
@@ -42,7 +42,7 @@ const Hero = () => {
                 variant="primary" 
                 size="xl"
                 onClick={handleHireMe}
-                className="animate-slide-up btn-primary glow-effect"
+                className="animate-slide-up btn-elegant glow-effect shimmer-effect"
               >
                 <Download className="w-5 h-5" />
                 Hire Me
@@ -52,7 +52,7 @@ const Hero = () => {
                 variant="whatsapp" 
                 size="xl"
                 onClick={handleWhatsAppClick}
-                className="animate-slide-up btn-whatsapp glow-effect"
+                className="animate-slide-up btn-premium glow-effect"
               >
                 <MessageCircle className="w-5 h-5" />
                 WhatsApp Me
@@ -64,13 +64,13 @@ const Hero = () => {
           <div className="animate-scale-in flex justify-center lg:justify-end">
             <div className="relative group">
               {/* Dynamic Animated Background Elements */}
-              <div className="absolute -inset-12 animate-pulse">
-                <div className="absolute top-0 left-0 w-4 h-4 bg-primary/40 rounded-full floating-element" style={{ animationDelay: '0s' }}></div>
-                <div className="absolute top-8 right-4 w-3 h-3 dynamic-gradient rounded-full floating-element" style={{ animationDelay: '0.5s' }}></div>
-                <div className="absolute bottom-4 left-8 w-5 h-5 accent-gradient rounded-full floating-element" style={{ animationDelay: '1s' }}></div>
-                <div className="absolute bottom-0 right-0 w-4 h-4 bg-accent-vibrant/60 rounded-full floating-element" style={{ animationDelay: '1.5s' }}></div>
-                <div className="absolute top-1/2 left-1/4 w-2 h-2 bg-warning/70 rounded-full floating-element" style={{ animationDelay: '2s' }}></div>
-                <div className="absolute top-1/4 right-1/3 w-3 h-3 bg-success/60 rounded-full floating-element" style={{ animationDelay: '2.5s' }}></div>
+              <div className="absolute -inset-12 animate-pulse-slow">
+                <div className="absolute top-0 left-0 w-4 h-4 bg-primary/60 rounded-full floating-element" style={{ animationDelay: '0s' }}></div>
+                <div className="absolute top-8 right-4 w-3 h-3 elegant-gradient rounded-full floating-element" style={{ animationDelay: '0.7s' }}></div>
+                <div className="absolute bottom-4 left-8 w-5 h-5 accent-gradient rounded-full floating-element" style={{ animationDelay: '1.4s' }}></div>
+                <div className="absolute bottom-0 right-0 w-4 h-4 bg-accent-vibrant/80 rounded-full floating-element" style={{ animationDelay: '2.1s' }}></div>
+                <div className="absolute top-1/2 left-1/4 w-2 h-2 bg-warning/90 rounded-full floating-element" style={{ animationDelay: '2.8s' }}></div>
+                <div className="absolute top-1/4 right-1/3 w-3 h-3 bg-success/80 rounded-full floating-element" style={{ animationDelay: '3.5s' }}></div>
               </div>
               
               {/* Multiple Gradient Rings */}
@@ -79,7 +79,7 @@ const Hero = () => {
               <div className="absolute -inset-1 primary-gradient rounded-full blur opacity-75 group-hover:blur-md transition-all duration-300"></div>
               
               {/* Main Image Container */}
-              <div className="relative overflow-hidden rounded-full border-4 border-card shadow-[var(--shadow-strong)] group-hover:shadow-[var(--shadow-glow)] transition-all duration-500 group-hover:scale-105">
+              <div className="relative overflow-hidden rounded-full border-4 border-card shadow-[var(--shadow-premium)] group-hover:shadow-[var(--shadow-gold)] transition-all duration-500 group-hover:scale-105 shimmer-effect">
                 <img
                   src={profileImage}
                   alt="Ambrose Ssekyanzi - Medical Student & Software Developer"
@@ -91,7 +91,7 @@ const Hero = () => {
               </div>
               
               {/* Dynamic Floating Badge */}
-              <div className="absolute -bottom-3 -right-3 sm:-bottom-4 sm:-right-4 dynamic-gradient text-white px-3 py-1.5 sm:px-4 sm:py-2 rounded-full text-xs sm:text-sm font-semibold shadow-[var(--shadow-dynamic)] floating-element glow-effect">
+              <div className="absolute -bottom-3 -right-3 sm:-bottom-4 sm:-right-4 elegant-gradient text-primary-foreground px-3 py-1.5 sm:px-4 sm:py-2 rounded-full text-xs sm:text-sm font-semibold shadow-[var(--shadow-premium)] floating-element glow-effect animate-pulse-slow">
                 Available for Hire! 🚀
               </div>
             </div>

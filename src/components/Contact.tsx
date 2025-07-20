@@ -1,5 +1,5 @@
 import { Button } from "@/components/ui/button";
-import { Mail, MessageCircle, Github, Linkedin, MapPin, Phone } from "lucide-react";
+import { Mail, MessageCircle, Github, Linkedin, MapPin, Phone, Youtube } from "lucide-react";
 
 const Contact = () => {
   const handleWhatsAppClick = () => {
@@ -36,19 +36,29 @@ const Contact = () => {
       icon: Github,
       label: "GitHub",
       url: "https://github.com/ambrose",
-      color: "hover:bg-gray-900"
+      color: "hover:bg-gray-900",
+      className: "btn-premium"
     },
     {
       icon: Linkedin,
       label: "LinkedIn", 
       url: "https://linkedin.com/in/ambrose-ssekyanzi",
-      color: "hover:bg-blue-600"
+      color: "hover:bg-blue-600",
+      className: "btn-premium"
+    },
+    {
+      icon: Youtube,
+      label: "YouTube",
+      url: "http://www.youtube.com/@ambrosessekyanzi",
+      color: "hover:bg-red-600",
+      className: "btn-youtube"
     },
     {
       icon: MessageCircle,
       label: "WhatsApp",
       url: "https://wa.me/256708685310",
-      color: "hover:bg-green-600"
+      color: "hover:bg-green-600",
+      className: "btn-premium"
     }
   ];
 
@@ -83,9 +93,9 @@ const Contact = () => {
               {contactInfo.map((item, index) => (
                 <div 
                   key={item.label}
-                  className="flex items-center gap-4 p-4 card-professional cursor-pointer"
+                  className="flex items-center gap-4 p-4 card-elegant cursor-pointer animate-slide-left shimmer-effect"
                   onClick={item.action}
-                  style={{ animationDelay: `${index * 0.1}s` }}
+                  style={{ animationDelay: `${index * 0.15}s` }}
                 >
                   <div className="w-12 h-12 primary-gradient rounded-lg flex items-center justify-center">
                     <item.icon className="w-6 h-6 text-white" />
@@ -106,8 +116,8 @@ const Contact = () => {
                   <button
                     key={social.label}
                     onClick={() => window.open(social.url, "_blank")}
-                    className={`w-12 h-12 rounded-lg bg-card border border-border flex items-center justify-center transition-all duration-300 hover:text-white ${social.color} hover:scale-110 hover:shadow-[var(--shadow-medium)]`}
-                    style={{ animationDelay: `${index * 0.1}s` }}
+                    className={`w-12 h-12 rounded-lg bg-card border border-border flex items-center justify-center transition-[var(--transition-elegant)] hover:text-white ${social.color} hover:scale-110 hover:shadow-[var(--shadow-elegant)] animate-scale-in shimmer-effect ${social.className}`}
+                    style={{ animationDelay: `${index * 0.15}s` }}
                   >
                     <social.icon className="w-5 h-5" />
                   </button>
@@ -117,8 +127,8 @@ const Contact = () => {
           </div>
           
           {/* Call to Action */}
-          <div className="animate-scale-in">
-            <div className="card-professional p-8 space-y-6 text-center">
+          <div className="animate-rotate-in">
+            <div className="card-premium p-8 space-y-6 text-center">
               <div className="w-20 h-20 primary-gradient rounded-full flex items-center justify-center mx-auto">
                 <MessageCircle className="w-10 h-10 text-white" />
               </div>
@@ -135,17 +145,17 @@ const Contact = () => {
                   variant="primary" 
                   size="xl"
                   onClick={handleWhatsAppClick}
-                  className="w-full"
+                  className="w-full btn-elegant animate-pulse-slow"
                 >
                   <MessageCircle className="w-5 h-5" />
                   Start WhatsApp Chat
                 </Button>
                 
                 <Button 
-                  variant="professional" 
+                  variant="secondary" 
                   size="lg"
                   onClick={handleEmailClick}
-                  className="w-full"
+                  className="w-full btn-premium"
                 >
                   <Mail className="w-5 h-5" />
                   Send Email

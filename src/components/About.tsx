@@ -37,7 +37,7 @@ const About = () => {
     <section id="about" className="section-padding bg-muted/30">
       <div className="container-max">
         <div className="text-center mb-16 animate-fade-in">
-          <h2 className="text-2xl sm:text-3xl md:text-4xl lg:text-5xl font-bold text-foreground mb-4">
+          <h2 className="text-2xl sm:text-3xl md:text-4xl lg:text-5xl font-bold text-foreground mb-4 font-playfair">
             About <span className="text-gradient">Me</span>
           </h2>
           <div className="w-24 h-1 primary-gradient mx-auto mb-6 rounded-full"></div>
@@ -80,8 +80,8 @@ const About = () => {
             {highlights.map((item, index) => (
               <div 
                 key={item.title}
-                className="card-professional p-6 text-center space-y-4"
-                style={{ animationDelay: `${index * 0.1}s` }}
+                className="card-premium p-6 text-center space-y-4 animate-rotate-in shimmer-effect"
+                style={{ animationDelay: `${index * 0.15}s` }}
               >
                 <div className="w-16 h-16 primary-gradient rounded-full flex items-center justify-center mx-auto">
                   <item.icon className="w-8 h-8 text-white" />

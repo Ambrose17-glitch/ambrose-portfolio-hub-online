@@ -39,7 +39,7 @@ const Projects = () => {
     <section id="projects" className="section-padding">
       <div className="container-max">
         <div className="text-center mb-16 animate-fade-in">
-          <h2 className="text-3xl md:text-4xl lg:text-5xl font-bold text-foreground mb-4">
+          <h2 className="text-3xl md:text-4xl lg:text-5xl font-bold text-foreground mb-4 font-playfair">
             Featured <span className="text-gradient">Projects</span>
           </h2>
           <div className="w-24 h-1 primary-gradient mx-auto mb-6 rounded-full"></div>
@@ -53,7 +53,7 @@ const Projects = () => {
           {projects.map((project, index) => (
             <div 
               key={project.id}
-              className="card-professional overflow-hidden group animate-scale-in"
+              className="card-premium overflow-hidden group animate-rotate-in shimmer-effect"
               style={{ animationDelay: `${index * 0.2}s` }}
             >
               {/* Project Image */}
@@ -93,7 +93,7 @@ const Projects = () => {
                   <Button 
                     variant="primary" 
                     size="sm"
-                    className="flex-1"
+                    className="flex-1 btn-elegant"
                     onClick={() => window.open(project.liveUrl, "_blank")}
                   >
                     <ExternalLink className="w-4 h-4" />
@@ -101,8 +101,9 @@ const Projects = () => {
                   </Button>
                   
                   <Button 
-                    variant="professional" 
+                    variant="secondary" 
                     size="sm"
+                    className="btn-premium"
                     onClick={() => window.open(project.githubUrl, "_blank")}
                   >
                     <Github className="w-4 h-4" />
